@@ -8,3 +8,8 @@ Patients (age 3-18 years) were enrolled in the following groups:
 - KT group: patients after successful KT, earliest four weeks after KT, without a history of rejection or chronic graft failure, eGFR > 60ml/min*1.73m2
 - HC group: normal kidney function, treated at the hospital for reasons other than kidney disease
 We excluded patients with a body weight below 15kg, acute or chronic inflammatory diseases, fever, diabetes, chronic liver disease, inflammatory bowel disease, or other gastrointestinal disorders (constipation, diarrhea, short bowel syndrome). Patients with antibiotic prophylaxis or treatment within the four weeks prior to recruitment were excluded.
+
+# 16S processing 
+Sequence processing and OTU classification 
+The sequences obtained were processed using LotuS (1.62)(16). Poisson binomial model based read filtering was applied(17). OTU clustering (UPARSE)(18) was based on a sequence similarity of 97%, while SILVA(19), GreenGenes(20) and HITdb(21) were incrementally used as databases for taxonomic assignment Lambda taxonomic similarity search. The taxonomic classification (genus 95% identity) was parsed using a custom Perl script, such that unassigned taxonomic levels were assigned to the last known taxonomic level and sequentially numbered. Normalization and computation of alpha diversity measures were performed using the rarefaction tool kit (RTK 0.93.1) with default settings(41).
+
